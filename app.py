@@ -20,5 +20,5 @@ if st.button("Predict Salary"):
     input_data = np.array([[years_exp]])
     input_scaled=scaler.transform(input_data)
     predicted_salary = model.predict(input_scaled)
-    st.success(f"Predicted Salary: Rs. {predicted_salary[0]:,.2f}")
+    st.success(f"Predicted Salary: Rs. {predicted_salary[0]}")
     
